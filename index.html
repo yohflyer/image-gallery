@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="dist/css/simpleGallery.css">
+    </head>
+    <body>
+        <div class="js-gallery-frame simple-gallery">
+            <div class="js-gallery-buttons">
+                <button class="js-gallery-left simple-gallery__navigation simple-gallery__navigation--left">
+                    <i class="material-icons">&#xE5CB;</i>
+                </button>
+                <button class="js-gallery-right simple-gallery__navigation simple-gallery__navigation--right">
+                    <i class="material-icons">&#xE5CC;</i>
+                </button>
+            </div>
+            <div class="js-gallery simple-gallery__images"><!-- Images inserted here --></div>
+        </div>
+        <script src="dist/js/simpleGallery.js"></script>
+        <script>
+            simpleGallery.init({
+                images: [
+                    {
+                        url: 'dist/img/new-york.jpg',
+                        alt: 'New York City',
+                        desc: 'New York City'
+                    },
+                    {
+                        url: 'dist/img/san-diego.jpg',
+                        alt: 'San Diego',
+                        desc: 'San Diego, CA'
+                    },
+                    {
+                        url: 'dist/img/washington.jpg',
+                        alt: 'Washington',
+                        desc: 'Washington'
+                    }
+                ],
+                settings: {
+                    speed: 3000,
+                    arrows: true,
+                    autoplay: true
+                }
+            });
+        </script>
+    </body>
+</html>
